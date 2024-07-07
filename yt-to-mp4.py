@@ -47,7 +47,7 @@ def download_youtube_video(url, output_path='.', resolution='1080p'):
 if __name__ == '__main__':
     
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    video_url = input("Enter the YouTube video URL: ")
+    video_url = input("Enter the YouTube url: ")
     try:
         download_youtube_video(video_url, current_dir)
     except Exception as e:

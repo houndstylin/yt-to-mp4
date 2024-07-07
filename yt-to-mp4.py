@@ -6,11 +6,9 @@ from proglog import ProgressBarLogger
 
 class CustomLogger(ProgressBarLogger):
     def callback(self, **changes):
-        
         pass
 
     def bars_callback(self, bar, attr, value, old_value=None):
-        
         pass
 
 def download_youtube_video(url, output_path='.', resolution='1080p'):

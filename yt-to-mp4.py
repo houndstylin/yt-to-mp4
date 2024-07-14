@@ -50,7 +50,7 @@ def download_youtube_video(url, output_path='.'):
     output_file = os.path.join(output_path, f"{video_title}.mp4")
 
     # merge
-    logger.info("[/] Merging video and audio...")
+    logger.info("[/] Merging video and audio... (this may take A WHILE, do not close)")
     video_clip = VideoFileClip(video_path)
     audio_clip = AudioFileClip(audio_path)
     final_clip = video_clip.set_audio(audio_clip)

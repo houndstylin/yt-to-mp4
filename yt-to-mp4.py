@@ -6,7 +6,6 @@ import yt_dlp as youtube_dl
 
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
-
 warnings.filterwarnings("ignore", category=UserWarning, module='moviepy')
 
 def download_youtube_video(url, output_path='.'):
